@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+    
+}
+section{
+    padding: 100px;
+}
+.back {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),#FFE4E1 110%), url(poto/Free\ Vector\ _\ Gradient\ liquid\ abstract\ background.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.About {
+    background-color: #FFE4E1;
+}
+header{
+    position: fixed;
+    padding: 40px 100px;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+header.fira{
+    padding: 20px 100px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0.0.0.0,1);
+}
+header.fira ul li a{
+    color: #111;
+}
+header.fira .logo{
+    color: #111;
+}
+.btn{
+    position: relative;
+    padding: 10px 20px;
+    background: #FFB6C1;
+    border-radius: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+.back h2{
+    font-size: 3em;
+    color: #fff;
+}
+.back h3{
+    font-size: 2em;
+    color: #fff;
+}
+.back h2 span{
+    font-size: 1.5em;
+    color: #000;
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+header .logo{
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    margin-right: 0 15px;
+    justify-content: space-between;
+}
+.contentbx{
+    padding-right: 30px;
+}
+.content .contentbx h3{
+    text-align: center;
+}
+.content .contentbx p{
+    text-align: center;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    min-width: 50%;
+}
+img {
+    max-width: 100%;
+}
+.border {
+    border-radius: 20px;
+}
+footer{
+    padding: 10px;
+    background: #222;
+}
+footer .center{
+    text-align: center;
+    color: #fff;
+    flex-direction: column;
+}
+.center div{
+    margin-bottom: 10px;
+}
+.center .icon span{
+    margin: 0 10px;
+    font-size: 20px;
+}
+.center .icon span a{
+    color: #fff;
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200vh;
+    background: #000815;
+    gap: 100px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+}
+.skill{
+    position: relative;
+    min-height: 100vh;
+    background: #000815;
+}
+
+.heading1{
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.heading1 p{
+    margin-top: 30px;
+}
+.container .box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 320px;
+    background: var(--clr);
+    box-shadow: 0 0 0 15px #0009,
+    0 25px 55px var(--clr);
+}
+.container .box .img{
+    position: relative;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0;
+    filter: blur(20px);
+    flex-direction: column;
+}
+
+.container .box .img ion-icon{
+    font-size: 50px;
+}
+.container .box .img h2{
+    margin-bottom: 35px;
+}
+.container .box:hover .img{
+    position: relative;
+    transform: scale(1);
+    transition-delay: 0.5s;
+    filter: blur(0);
+}
+.container .box .clip{
+    position: absolute;
+    inset: 20px;
+    box-shadow: 0 0 0 18px #020d1e;
+}
+.container .box .clip span{
+    position: absolute;
+    inset: 1px;
+    background: #020d1e;
+    transition: 0.25s; 
+}
+.container .box .clip span:nth-child(1){
+    clip-path: polygon(0 0,50% 40%,  100% 0);
+    transition-delay: 0;
+}
+.container .box:hover .clip span:nth-child(1){
+    clip-path: polygon(0 0,50% 0,  100% 0);
+}
+.container .box .clip span:nth-child(2){
+    clip-path: polygon(0 0,40% 50%,50% 100%,0 100%);
+    transition: 0.25s;
+}
+.container .box:hover .clip span:nth-child(2){
+    clip-path: polygon(0 0,0% 100%,50% 100%,0 100%);
+}
+
+.container .box .clip span:nth-child(3){
+    clip-path: polygon(60% 50%, 100% 0, 100% 100%, 50% 100%);
+    transition-delay: 0.5s
+}
+.container .box:hover .clip span:nth-child(3){
+    clip-path: polygon(100% 100%, 100% 0, 100% 100%, 50% 100%);
+}
+
+
+
+
+
+
+@media (max-width: 991px)
+{
+    header,
+    header.fira {
+        z-index: 1000;
+        padding: 20px 50px;
+    }
+    .menu {
+        position: fixed;
+        top: 68px;
+        left: -100%;
+        padding: 100px 50px;
+        display: block;
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        z-index: 999;
+        border-top: 2px solid rgba(0,0,0,0.1);
+        transition: 0.5s;
+    }
+    .menu.ac {
+        left: 0;
+    }
+    header ul li a {
+        color: #111;
+        margin: 10px;
+        font-size: 24px;
+    }
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(poto/menu-outline.svg);
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.ac {
+        width: 40px;
+        height: 40px;
+        background: url(poto/close-outline.svg);
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .back h2 {
+        font-size: 2em;
+    }
+    .back h3{
+        font-size: 1.5em;
+    }
+    .back{
+        padding: 100px 50px 50px;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .img {
+        margin-top: 30px;
+    }
+}
+
